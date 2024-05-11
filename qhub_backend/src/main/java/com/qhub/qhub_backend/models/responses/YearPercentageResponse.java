@@ -1,4 +1,4 @@
-package com.qhub.qhub_backend;
+package com.qhub.qhub_backend.models.responses;
 
 
 import lombok.Builder;
