@@ -1,13 +1,11 @@
 package com.qhub.qhub_backend;
 
+import com.qhub.qhub_backend.models.responses.RandomQuoteResponse;
+import com.qhub.qhub_backend.models.responses.YearPercentageResponse;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 
 @RestController
 @RequestMapping("api/v1/")
@@ -20,5 +18,11 @@ public class Controller {
     public YearPercentageResponse getYearPercentage() {
 
         return service.getYearPercentage();
+    }
+
+    @GetMapping("random-quote")
+    public RandomQuoteResponse getRandomQuote() {
+
+        return service.getRandomQuote();
     }
 }
