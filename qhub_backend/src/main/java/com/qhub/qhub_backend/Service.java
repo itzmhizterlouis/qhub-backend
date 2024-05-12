@@ -54,7 +54,7 @@ public class Service {
 
         Random random = new Random();
 
-        long index = random.nextInt(1, 101);
+        long index = random.nextInt(1, 401);
 
         return quoteRepository.findById(index);
 
